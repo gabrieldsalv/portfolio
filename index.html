@@ -3,185 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>G4BR13L Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Portfolio</div>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h1>Hi, I'm Gabriela Alvarenga</h1>
-        <h3>Full-Stack Developer | 22y Located in Florianópolis, Brazil</h3>
-        <p>Crafting innovative solutions and delivering seamless user experiences with a passion for clean code and cutting-edge technologies.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project-card">
-                <div class="content">
-                    <h3>Digital Time Capsule</h3>
-                    <p>A Laravel-based project where users create virtual time capsules with photos, texts, and videos, scheduled for future release. It features social media integration, privacy settings, email notifications, an interactive timeline, and collaborative capsules, highlighting file storage, encryption, and time-based logic handling.</p>
-                    <div class="tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">Laravel</span>
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">MySQL</span>
-                    </div>
-                </div>
+  
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
-            <div class="project-card">
-                <div class="content">
-                    <h3>Recipe Generator & Meal Planner with Pantry Management</h3>
-                    <p>An AI-powered recipe suggestion app where users input pantry ingredients to generate recipes, shopping lists, and meal plans with nutrition tracking. Features include recipe scaling, unit conversion, image recognition for adding items, and sharing/rating recipes, demonstrating complex algorithms and data processing skills.</p>
-                    <div class="tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">Laravel</span>
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">AI</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="content">
-                    <h3>Freelancer Portfolio Generator</h3>
-                    <p>A portfolio builder where users input work history and projects, with AI-assisted descriptions, customizable templates, SEO tools, analytics, and PDF resume generation. Features GitHub and social media integration, showcasing frontend skills and API handling.</p>
-                    <div class="tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">Laravel</span>
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">AI</span>
-                    </div>
-                </div>
-            </div>
-           <div class="project-card">
-                <div class="content">
-                    <h3>Creative Writing Collaboration Platform</h3>
-                    <p>A collaborative writing platform where users create branching stories with tree-style visualization, voting, and plot development tools. Includes word count goals, real-time editing, export options, and writing prompts, demonstrating complex data structures and real-time updates.</p>
-                    <div class="tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">Laravel</span>
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">MySQL</span>
-                    </div>
-                </div>
-           </div>
+            <button class="menu-toggle">☰</button>
         </div>
-    </section>
-    <section id="about" class="about">
-        <h2>About me</h2>
-        <p><span id="status">status</span> <strong>available</strong> to new jobs opportunities!</p>
-        <h3>resume</h3>
-        <p>Full-stack developer with a specialization in back-end, mainly in Python and PHP. I have experience developing different types of web applications, from management systems to API integrations. My focus is on building clean and maintainable code, always seeking to learn new technologies to solve problems efficiently.</p>
-        <h3>skills</h3>
-        <div class="skills">
-            <p>Programming Languages: </p>
-            <ul class="skills-topics">
-                <li>Python</li>
-                <li>PHP</li>
-                <li>C#</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-        <div class="skills">
-            <p>Frameworks & Technologies: </p>
-            <ul class="skills-topics">
-                <li>Flask</li>
-                <li>Laravel</li>
-                <li>.NET</li>
-                <li>Node.js</li>
-                <li>ASP.NET</li>
-            </ul>
-        </div>
-        <div class="skills">
-            <p>Cybersecurity</p>
-            <ul class="skills-topics">
-                <li>Vulnerability Management</li>
-                <li>Network Protocols</li>
-                <li>Security Tools</li>
-                <li>Encryption</li>
-                <li>Access Control</li>
-            </ul>
-        </div>
-        <div class="skills">
-            <p>Backend Development</p>
-            <ul class="skills-topics">
-                <li>RESTful APIs</li>
-                <li>Database Management</li>
-                <li>Cloud Integration (Azure)</li>
-            </ul>
-        </div>
-        <div class="skills">
-            <p>Soft Skills</p>
-            <ul class="skills-topics">
-                <li>Critical Thinking</li>
-                <li>Problem Solving</li>
-                <li>Attention to Detail</li>
-                <li>Collaboration</li>
-                <li>Resilience</li>
-                <li>Patience</li>
-            </ul>
-        </div>
-        <div class="skills">
-            <p>Development Tools</p>
-            <ul class="skills-topics">
-                <li>Git</li>
-                <li>Docker</li>
-                <li>Jenkins</li>
-                <li>Visual Studio</li>
-                <li>VS Code</li>
-            </ul>
-        </div>
-        <div class="skills">
-            <p>Web Technologies</p>
-            <ul class="skills-topics">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>Bootstrap</li>
-        </div>
-        <div class="skills">
-            <p>DevOps</p>
-            <ul class="skills-topics">
-                <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
-                <li>Automation</li>
-            </ul>
-        </div>
-        <div class="skills">
-            <p>Operating Systems</p>
-            <ul class="skills-topics">
-                <li>Kali Linux</li>
-                <li>Windows</li>
-                <li>Linux</li>
-            </ul>
-        </div>
-    </section>
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Let's work together! Send me an email at <a href="mailto:gabriel.dsalvarenga@gmail.com">gabriel.dsalvarenga@gmail.com</a></p>
-        <p>I am also available by number <a href="tel:+5548988382880">+55 (48) 988382880</a></p>
+    </nav>
 
-        <h3>location: Florianópolis - SC (Brazil)</h3>
-        <img id="map" src="./mapa-centro-Florianopolis.jpg" alt="Mapa Central Florianópolis Santa Catarina">
+   
+    <main>
+        <section id="home" class="hero active">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="typing-container">
+                            <span id="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </h1>
+                        <h3 data-aos="fade-up" data-aos-delay="100">Full-Stack Developer | Located in Florianópolis - SC</h3>
+                    </div>
+                    <a href="mailto:gabrielasalvarenga2@gmail.com" class="cta" data-aos="fade-up" data-aos-delay="200">Book a Call</a>
+                </div>
+                <p data-aos="fade-up" data-aos-delay="300">Crafting seamless experiences and bold visuals.</p>
+                <p data-aos="fade-up" data-aos-delay="350">Currently studying Information Systems Major and Cybernetic Defense</p>
+                <p class="availability" data-aos="fade-up" data-aos-delay="400">Available for new projects</p>
+            </div>
+        </section>
+        
+        <section id="about" class="section">
+          <div class="container">
+             <h2>About Me</h2>
+             <div class="about-content">
+                <p>I'm a full-stack developer with a strong backend focus, currently pursuing my college degree while working as a freelance developer. My coding journey began in 2017 when I discovered my passion for building robust systems and solving complex problems through backend development.</p>
+                <br>
+                <p>Over the years, I've honed my skills in modern tech stacks including Python/Flask and PHP/Laravel for backend solutions, complemented by JavaScript/Vue.js for frontend implementations. This full-stack versatility allows me to deliver complete, production-ready applications from concept to deployment.</p>
+                <br>
+                <p>Currently accepting both freelance projects and full-time opportunities. Whether you need API development, database architecture, or full-cycle web application building, I'm ready to bring technical solutions to your business challenges. Let's create something impactful together!</p>
+            </div>
+          </div>
+        </section>
     
-    </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Digital Time Capsule</h3>
+                        <p>A Laravel-based project where users create virtual time capsules with photos, texts, and videos, scheduled for future release. It features social media integration, privacy settings, email notifications, an interactive timeline, and collaborative capsules, highlighting file storage, encryption, and time-based logic handling.</p>
+                        <a href="#" class="project-link">See Prototype →</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Recipe Generator & Meal Planner</h3>
+                        <p>An AI-powered recipe suggestion app where users input pantry ingredients to generate recipes, shopping lists, and meal plans with nutrition tracking. Features include recipe scaling, unit conversion, image recognition for adding items, and sharing/rating recipes, demonstrating complex algorithms and data processing skills.</p>
+                        <a href="#" class="project-link">See Prototype →</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Freelancer Portfolio Generator</h3>
+                        <p>A portfolio builder where users input work history and projects, with AI-assisted descriptions, customizable templates, SEO tools, analytics, and PDF resume generation. Features GitHub and social media integration, showcasing frontend skills and API handling.</p>
+                        <a href="#" class="project-link">See Prototype →</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Creative Writing Collaboration Platform</h3>
+                        <p>A platform for writers to collaborate on stories, poems, and scripts, with version control, real-time editing, and publishing features. Users can create private or public projects, invite collaborators, and track changes, demonstrating real-time database updates and user authentication.</p>
+                        <a href="#" class="project-link">See Prototype →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <form class="contact-form" method="POST" action="https://formspree.io/f/xwpvbojj">
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="email" placeholder="Email" name="email">
+                    <textarea placeholder="Message" name="message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
     <footer>
-        <p>&copy; 2025 G4BR13L. All rights reserved.</p>
+      <p class="footer-p">&copy; build by G4BR13L</p>
     </footer>
 </body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({ // Inicialize aqui
+        duration: 800,
+        once: true,
+        easing: 'ease-in-out-quad'
+    });
+</script>
+<script src="script.js"></script>
 </html>
