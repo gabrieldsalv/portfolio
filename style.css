@@ -308,7 +308,7 @@ section.active {
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid rgba(56, 189, 248, 0.2);
-    background: rgba(15, 23, 42, 0.7);
+    background: rgba(14, 17, 24, 0.7);
     color: var(--light);
 }
 
@@ -335,7 +335,7 @@ footer {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    background: rgba(15, 23, 42, 0.9);
+    background: rgba(14, 17, 24, 0.7);
     z-index: 100;
     transform: translateY(100%);
     transition: transform 0.3s ease;
@@ -395,6 +395,7 @@ footer.visible {
 
     .about-content {
         padding: 1rem;
+        overflow: scroll;
     }
     
     .about-content p {
@@ -446,9 +447,61 @@ footer.visible {
     }
 }
 
+@media (max-width: 576px) {
+    section {
+        padding: 0.4rem;
+    }
+    .container {
+        margin: 0 1.5rem;
+    }
+    .navbar {
+        left: 0rem;
+        margin-left: 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        border-left-width: 2px;
+    }
+
+    .cta {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .container h2 {
+        margin-top: 5rem;
+    }
+
+    .about-content {
+        padding: 0.8rem;
+    }
+    
+    .about-content p {
+        font-size: 0.8rem;
+        line-height: 1.7;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 @media (max-width: 480px) {
     .navbar {
-        left: 1rem;
+        left: 0.5rem;
+    }
+
+    .container {
+        margin: 0 2.5rem;
     }
 
     .hero h1 {
@@ -468,4 +521,49 @@ footer.visible {
     .project-grid {
         grid-template-columns: 1fr;
     }
+}
+
+@media (max-width: 360px) {
+    .navbar {
+        left: 0.3rem;
+    }
+
+    .container {
+        margin: 0 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h3 {
+        font-size: 1.1rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        border-left-width: 2px;
+    }
+
+    .cta {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .container h2 {
+        margin-top: 5rem;
+    }
+
+    .about-content {
+        padding: 0.8rem;
+    }
+    
+    .about-content p {
+        font-size: 0.8rem;
+        line-height: 1.7;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
 }
